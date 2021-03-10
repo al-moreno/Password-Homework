@@ -9,7 +9,7 @@ This application will generate a password on your browser after the user provide
 
 No installation is needed other than prefered browers and a keyboard to enter criteria.
 
-- Open the browser to the following link:    http://gitbut 
+- Open the browser to the following link:     https://al-moreno.github.io/Password-Homework/  
 - Enter requested critira and press generate password button
 - Password will display on screen.
 
@@ -22,6 +22,7 @@ This applicaitons usage would be benefitial when attempting to provide a ramdome
 
 Alternativly you may open my code for review with VSCode.
 
+ https://al-moreno.github.io/Password-Homework/
 
 
 *linsk 
