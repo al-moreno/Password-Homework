@@ -1,5 +1,5 @@
 
-// Assignment Code
+// Assignment Code - ussing id generateas the query selector from the DOM
 var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
@@ -9,7 +9,7 @@ function writePassword() {
 
     passwordText.value = password;
 }
-//Define variables with criteria fo password
+//Define variables with criteria for password
 var specialCharacters = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "{", "}", "~", "?", "<", ">", "/"];
 var lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 var upperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
@@ -34,7 +34,8 @@ var useLowerCase = confirm("Do you want to include lowercase characters?");
 var useUpperCase = confirm("Do you want to include uppercase characters?");
 var useNumbers = confirm("Do you want to include number characters?");
 var useSpecialCharacters = confirm("Do you want to include special characters?");
-    
+
+//Tif statements for testing criteria entry
     if (useLowerCase === true) {
         arrayBank += lowerCase;
 }
@@ -52,12 +53,16 @@ var useSpecialCharacters = confirm("Do you want to include special characters?")
     arrayBank += specialCharacters;
 }
     var randomPassword = " ";
+//Breaking the variable from a string format and eliminating the , as an optional symbol
+    var arrayBank = arrayBank.split(",");
 
+//for loop generating the required number of characters
     for (var i = 0; i < passwordLength; i++) {
         randomPassword += arrayBank[Math.floor(Math.random() * (arrayBank.length))];
         console.log(Math.floor(Math.random() * (arrayBank.length)));
         console.log(randomPassword);
 }
+//Prints password to box
     return randomPassword;
 
 }
